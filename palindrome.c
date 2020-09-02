@@ -9,11 +9,7 @@ int main()
   begin = str;
   end = &(rev[len-1]);
   while(*begin != '\0')
-  {
-    *end = *begin;
-    end--;
-    begin++;
-  }
+    *end-- = *begin++;
   rev[len] = '\0';
   printf("%s-->%s\n", str, rev);
   return 0;
