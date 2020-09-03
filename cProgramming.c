@@ -64,7 +64,7 @@ int main()
     return 0;
   }
   //printf("\n%s <- %d",s, count);
-  if(count == len)
+  if(count > len)
     printf("not possible(-1)");
   else
     printf("done in(%d)",count);
